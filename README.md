@@ -16,7 +16,7 @@ sudo chmod +x ezcrack.sh
 ./ezcrack.sh <pcap files>
 ```
 
-Note that your pcap files do not need to be passed as an argument. If you simply run ./ezcrack.sh, you will be prompted to drag your files into the terminal window
+Note that your pcap files do not need to be passed as an argument. If you simply run ```./ezcrack.sh```, you will be prompted to drag your files into the terminal window
 
 The script will sanitize the files and convert them to .hc22000 files and place them in /home/USER/hashes
 
