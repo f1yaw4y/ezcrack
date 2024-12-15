@@ -17,7 +17,7 @@ echo "Hashcat results will be saved to $RESULTS_FILE"
 # Prompt the user for input if no files are provided
 if [ $# -eq 0 ]; then
     echo "No .pcap files provided!"
-    echo "Please drag and drop the .pcap files into this terminal window (space-separated) and press Enter:"
+    echo "Please drag and drop the .pcap files into this terminal window or specify the location (space-separated) and press Enter:"
     read -r -a pcap_files
     if [ ${#pcap_files[@]} -eq 0 ]; then
         echo "No files entered. Exiting."
@@ -58,7 +58,7 @@ for pcap_file in "${pcap_files[@]}"; do
 done
 
 # Prompt the user for a dictionary file to use with hashcat
-echo "Please drag and drop the dictionary file into this terminal window and press Enter:"
+echo "Please drag and drop the dictionary file into this terminal window or specify the location and press Enter:"
 read -r dictionary_file
 
 # Resolve potential issues with drag-and-drop paths
