@@ -9,10 +9,12 @@ This is a very inefficient way of cracking hashes, and should only be used if yo
 
 Install and use:
 
+'''
 git clone https://github.com/f1yaw4y/ezcrack/
 cd ezcrack
 sudo chmod +x ezcrack.sh
 ./ezcrack.sh <pcap files>
+'''
 
 Note that your pcap files do not need to be passed as an argument. If you simply run ./ezcrack.sh, you will be prompted to drag your files into the terminal window
 
