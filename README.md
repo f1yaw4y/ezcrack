@@ -16,8 +16,8 @@ sudo chmod +x ezcrack.sh
 
 Note that your pcap files do not need to be passed as an argument. If you simply run ```./ezcrack.sh```, you will be prompted to drag your files into the terminal window
 
-The script will sanitize the files and convert them to .hc22000 files and place them in /home/USER/hashes
+The script will sanitize the files and convert them to .hc22000 files and place them in /home/$USER/hashes
 
 After conversion is done, you will be prompted for a dictionary, and the converted hc files will be passed to hashcat with your dictionary. The results of hashcat will also be stored in the hashes folder
 
-When I have time I will filter the hashcat output so that only the cracked status and results are in the output file, instead of the entire output
+When I have time I will filter the hashcat output so that only the cracked status and results are in the output file, instead of the entire output.I also would like to clean up the script so it is more pleasing to use
